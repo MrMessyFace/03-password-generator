@@ -93,16 +93,7 @@ function setTime() {
     secondsLeft--;
     timerEl.textContent = secondsLeft + " seconds until your randomly generated password is deleted.";
     if(secondsLeft === 0) {
-      clearInterval(timerInterval);
-      clearPassword();
+      location.reload();
     }
   }, 1000);
-}
-
-function clearPassword() {
-  var password = "";
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-  timerEl.textContent = " ";
 }
