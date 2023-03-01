@@ -18,4 +18,4 @@ To use this page, you click "Generate Password" and it will ask you series of qu
 
 HTML, CSS, and starter JavaScript code were provided by my bootcamp instructors and most of the JavaScript code was written from scratch through trial and error, some looking back at activities done in class, and searching via Google.
 
-https://mrmessyface.github.io/03-password-generator/
+https://mrmessyface.github.io/password-generator/
