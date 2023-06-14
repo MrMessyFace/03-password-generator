@@ -34,7 +34,7 @@ function generatePassword() {
     var confirmLowercase = confirm("Click OK to confirm including lowercase characters.");
     var confirmUppercase = confirm("Click OK to confirm including uppercase characters.");
   };
-  
+
   // Choices accesses the arrays.
   var choices = [];
 
@@ -64,8 +64,8 @@ function generatePassword() {
 
   for (var i = 0; i < enterLimit; i++) {
     randomPassword = randomPassword + choices[Math.floor(Math.random() * choices.length)];
-}
-return randomPassword;
+  }
+  return randomPassword;
 }
 
 // Write password to the #password input
@@ -77,7 +77,7 @@ function writePassword() {
     setTime();
   };
   if (randomPassword === "") {
-    
+
   }
 }
 
@@ -89,10 +89,10 @@ var timerEl = document.querySelector(".timer");
 var secondsLeft = 11;
 
 function setTime() {
-  var timerInterval = setInterval(function() {
+  var timerInterval = setInterval(function () {
     secondsLeft--;
     timerEl.textContent = secondsLeft + " seconds until your randomly generated password is deleted.";
-    if(secondsLeft === 0) {
+    if (secondsLeft === 0) {
       location.reload();
     }
   }, 1000);
