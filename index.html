@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Password Generator</title>
-</head>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-<body>
-  <div class="container">
-    <header>
-      <h1>Password Generator</h1>
-    </header>
-    <div class="card">
-      <div class="card-header">
-        <h2>Generate a Password</h2>
+    <title>Password Generator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <header>
+          <h1>Password Generator</h1>
+        </header>
+        <div class="main-section">
+          <div class="generator">
+            <h2>Generate a Password</h2>
+          </div>
+          <div class="results-section">
+            <textarea
+              readonly
+              id="password"
+              placeholder="Your Secure Password"
+              aria-label="Generated Password"
+              class="results"
+            ></textarea>
+          </div>
+          <h3 class="timer"></h3>
+          <div class="button-section">
+            <button id="generate" class="button">Generate Password</button>
+          </div>
+        </div>
       </div>
-
-      <div class="card-body">
-        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-      </div>
-
-      <h3 class="timer" style="text-align:center;"></h3>
-      <div class="card-footer">
-        <button id="generate" class="btn">Generate Password</button>
+      <div class="footer">
+        <div class="copyright">
+          &copy; 2023 Jessie S. Galindo. All Rights Reserved.
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="assets/js/script.js"></script>
-</body>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
